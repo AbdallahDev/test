@@ -1,8 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar">
-    <head>
-        <meta charset="UTF-8">
-        <title>مطعم المنسف الكركي</title>
-    </head>
-    <body></body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="عبدالله احمد" />
+    <meta
+      name="description"
+      content="مطعم المنسف الكركي هو مطعم يقدم أشهى أطباق المنسف الأردني التقليدي."
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css"
+    <title>مطعم المنسف الكركي</title>
+  </head>
+  <body>
+    <header id="home">
+      <h1>مطعم المنسف الكركي</h1>
+      <img src="images/logo.png" alt="شعار المطعم" width="180" />
+      <nav>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">عن المطعم</a></li>
+          <li><a href="#menu">قائمة الطعام</a></li>
+          <li><a href="#order">اطلب وجبة</a></li>
+          <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="about">
+        <h2>عن المطعم</h2>
+        <p>
+          مطعم المنسف الكركي هو مطعم يقدم أشهى أطباق المنسف الأردني التقليدي.
+          نحن نستخدم أفضل المكونات الطازجة لضمان تجربة طعام لا تُنسى.
+        </p>
+      </article>
+      <article id="menu">
+        <h2>قائمة الطعام</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>الطبق</th>
+              <th>الوصف</th>
+              <th>السعر</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>منسف كركي صغير</td>
+              <td>طبق المنسف التقليدي مع لحم الضأن والجميد الكركي</td>
+              <td>25 دينار</td>
+            </tr>
+            <tr>
+              <td>منسف كركي متوسط</td>
+              <td>طبق المنسف التقليدي مع لحم الضأن والجميد الكركي</td>
+              <td>30 دينار</td>
+            </tr>
+            <tr>
+              <td>منسف كركي كبير</td>
+              <td>طبق المنسف التقليدي مع لحم الضأن والجميد الكركي</td>
+              <td>35 دينار</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <article id="order">
+        <form>
+          <div>
+            <label for="meals">اختر وجبة:</label>
+            <select id="meals">
+              <option value="small mansaf">منسف صغير</option>
+              <option value="medium mansaf">منسف متوسف</option>
+              <option value="large mansaf">منسف كبير</option>
+            </select>
+          </div>
+          <div>
+            <label for="number-of-meals">عدد الوجبات:</label>
+            <input type="number" id="number-of-meals" min="1" max="10" value="1" />
+          </div>
+          <div>
+            <label for="address">عنوان التوصيل:</label>
+            <input type="text" id="address" placeholder="عنوان التوصيل" />
+          </div>
+          <input type="submit" id="" value="اطلب" />
+        </form>
+      </article>
+      <article id="contact">
+        <h2>اتصل بنا</h2>
+        <address>
+          <p>العنوان</p>
+          <a href="https://goo.gl/maps/xyz" target="_blank">شارع الملك عبد الله، الكرك، الأردن</a>
+          <p>رقم الهاتف:</p>
+          <a href="tel:+962777777777">+962 7 7777 7777</a>
+          <p>البريد الإلكتروني:</p>
+          <a href="mailto:mansafresturant@example.com">mansafresturant@example.com</a>
+        </address>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2026 مطعم المنسف الكركي. جميع الحقوق محفوظة.</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,110 @@
+/* Reset بسيط */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* body */
+body {
+  direction: rtl;
+  background-color: #f8f5f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* header */
+header {
+  background-color: #7a3e2b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  margin: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* sections */
+main {
+  padding: 20px;
+}
+
+section,
+article {
+  margin-bottom: 40px;
+}
+
+/* menu table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #eee;
+}
+
+/* form */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  background-color: #7a3e2b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5c2e20;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
