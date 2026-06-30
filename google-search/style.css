@@ -1,11 +1,17 @@
-div {
-  margin-top: 30px;
+#main {
+  width: 70%;
+  margin: 100px auto
+}
+.centered{
+  display: block;
+  margin: auto;
 }
 .logo {
   width: 300px;
   display: block;
+  margin-bottom: 20px;
 }
 
-.search-input {
+.search-field {
   width: 400px;
 }

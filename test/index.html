@@ -2,24 +2,37 @@
 <html>
 
 <head>
-    <style>
-        .parent {
-  display: flow-root;
-  background: gray;
-}
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.child {
-  margin-top: 50px;
-  height: 100px;
-  background: orange;
-}
-    </style>
+    #main {
+      width: 50%;
+    }
+
+    #main {
+      border: 1px black solid;
+      width: 50%;
+      height: 50%;
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="parent">
-  <div class="child"></div>
-</div>
+  <div id="main">
+    <img src="river.jpg">
+  </div>
 </body>
 
 </html>
