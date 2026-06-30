@@ -1,98 +1,11 @@
-/* Entire Page Set to Solid White Background */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
+div {
+  margin-top: 30px;
+}
+.logo {
+  width: 300px;
+  display: block;
 }
 
-/* Centralized Layout Element */
-.google-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 584px; /* Default desktop sizing standard */
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-/* Logo Spacing Adjustment */
-.logo-box {
-  margin-bottom: 26px;
-  user-select: none;
-}
-
-.search-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Pill Input Element Layout */
-.search-box {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 46px;
-  border: 1px solid #dfe1e5;
-  border-radius: 24px;
-  padding: 0 14px;
-  box-sizing: border-box;
-  transition: box-shadow 0.2s;
-}
-
-/* Hover and Click Glow Shadow Profile */
-.search-box:focus-within,
-.search-box:hover {
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-  border-color: rgba(223, 225, 229, 0);
-}
-
-/* Clear Default Base Input Line Properties */
-.search-box input[type="search"] {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  color: #202124;
-  background: transparent;
-}
-
-/* Action Button Wrapper Row */
-.button-group {
-  margin-top: 28px;
-  display: flex;
-  gap: 12px;
-}
-
-/* Clean Gray Classic Button Styles */
-.button-group button {
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
-  border-radius: 4px;
-  color: #3c4043;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  padding: 0 16px;
-  height: 36px;
-  min-width: 54px;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-  transition:
-    border 0.1s,
-    box-shadow 0.1s;
-}
-
-/* Button Active Hover State */
-.button-group button:hover {
-  border: 1px solid #dadce0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: #202124;
+.search-input {
+  width: 400px;
 }
