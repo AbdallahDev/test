@@ -1,0 +1,8 @@
+.hero {
+  background-color: #f2f8ef;
+}
+.hero-image img {
+  width: 507px;
+  height: 299px;
+  border-radius: 28px;
+}
