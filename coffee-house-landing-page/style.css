@@ -12,6 +12,18 @@ header {
 }
 .logo {
   font-size: xx-large;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-icon {
+  /* width: 53%; */
+  height: 56%;
+}
+.logo-icon img {
+  width: 72%;
+  height: 100%;
 }
 .logo-text {
   /* font-size: large; */
@@ -26,6 +38,11 @@ header {
   width: 40%;
   font-size: x-large;
   /* text-decoration: none; */
+}
+.active {
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 20px;
 }
 header a {
   text-decoration: none;
