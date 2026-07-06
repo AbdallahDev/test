@@ -73,8 +73,10 @@ header a {
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 80%;
-  margin: 17px 0;
+  /* margin: 14px 0; */
+  padding: 23px 0;
   /* background-color: #52901a; */
 }
 .hero {
@@ -114,12 +116,23 @@ h1 {
 }
 .feature-card {
   display: flex;
+  justify-content: space-between;
+  width: 420px;
+  align-items: flex-start;
 }
 .feature-icon {
-  background-color: greenyellow;
+  width: 82px;
+  height: 79px;
+  background-color: #f2f8ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0px 29px; */
+  border-radius: 16px;
 }
 .feature-text {
   padding: 0;
+  width: 309px;
 }
 .footer {
   display: flex;
@@ -145,4 +158,11 @@ a {
   align-items: center;
   justify-content: space-around;
   width: 14%;
+}
+.fa-solid {
+  color: green;
+}
+
+.feature-text h3 {
+  margin-top: 0;
 }
