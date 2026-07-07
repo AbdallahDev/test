@@ -1,37 +1,33 @@
-html {
-  background-color: white;
+body {
+  font: 1.2em / 1.5 sans-serif;
 }
 
-body {
-  font: 1.2em / 1.5 system-ui;
-  padding: 20px;
-  width: 500px;
-  background-color: #efefef;
-  margin: 0 auto;
-}
-h1 {
-  color: darkslategray;
-  border-bottom: 10px dotted purple;
-  font-size: 2rem;
-}
-h2 {
-  font-style: italic;
-  font-size: 1.5rem;
-}
 ul {
-  background-color: white;
-  border: solid purple 5px;
-  padding: 30px;
-  border-radius: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+li {
+  margin-bottom: 0.5em;
+}
+
 a {
-  color: green;
+  display: block;
+  padding: 0.5em;
 }
-a:hover {
-  color: darkgreen;
-  font-weight: bold;
+
+a {
+  border: 5px solid grey;
 }
-.job-title {
-  color: darkslategray;
-  font-weight: bold;
+
+/* Add styles here */
+a[title] {
+  border-color: rgb(43, 110, 99);
+}
+a[href*="contact"] {
+  border-color: orange;
+}
+a[href^="https"] {
+  border-color: green;
 }

@@ -1,5 +1,7 @@
-body {
+* {
   margin: 0;
+}
+body {
   min-height: 100vh;
   font-size: x-large;
 }
@@ -35,6 +37,7 @@ header {
   font-size: x-large;
   /* text-decoration: none; */
 }
+nav a:focus,
 .active {
   text-decoration-line: underline;
   text-decoration-color: black;
@@ -43,8 +46,11 @@ header {
   text-decoration-color: green;
 }
 header a {
-  text-decoration: none;
   color: black;
+}
+header a:hover {
+  text-decoration-thickness: 3px;
+  color: green;
 }
 .btn-primary {
   background-color: #6c8d4f;
@@ -104,7 +110,6 @@ header a {
 }
 h1 {
   font-size: xxx-large;
-  margin: 0;
 }
 .hero-image {
   width: 41%;
@@ -119,6 +124,7 @@ h1 {
   justify-content: space-between;
   width: 420px;
   height: 166px;
+  margin-top: 21px;
   align-items: flex-start;
 }
 .feature-icon {
@@ -168,10 +174,7 @@ h1 {
 .fa-solid {
   color: green;
 }
-.feature-text h3 {
-  margin: 0;
-}
-.feature-text p {
+h3 + p {
   margin-top: 10px;
 }
 .feature-icon img {
