@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   min-height: 100vh;
@@ -81,8 +82,8 @@ header a:hover {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  /* margin: 14px 0; */
-  padding: 23px 0;
+  margin: 27px 0;
+  /* padding: 23px 0; */
   /* background-color: #52901a; */
 }
 .hero {
