@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  /* flex: 2; */
 }
 body {
   min-height: 100vh;
@@ -17,8 +18,8 @@ header {
   font-size: xx-large;
   width: 13%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; */
+  justify-content: start;
 }
 .logo-icon {
   height: 56%;
@@ -26,47 +27,50 @@ header {
 }
 .logo-text {
   /* font-size: large; */
+  font-weight: 800;
 }
 .logo-text span {
   color: green;
 }
-.nav {
+
+.header .nav ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 40%;
-  font-size: x-large;
-  /* text-decoration: none; */
+  width: 612px;
+  font-size: 20px;
+  list-style-type: none;
 }
-nav a:focus,
+.header .nav ul a {
+  display: inline-flex;
+  justify-content: center;
+  width: 78px;
+  /* color: black; */
+  height: 42px;
+}
+header nav a:focus,
 .active {
-  text-decoration-line: underline;
-  text-decoration-color: black;
-  text-decoration-thickness: 3px;
+  border-bottom: 3px solid green;
   color: green;
-  text-decoration-color: green;
-}
-header a {
-  color: black;
 }
 header a:hover {
   text-decoration-thickness: 3px;
   color: green;
 }
+
 .btn-primary {
   background-color: #6c8d4f;
   color: white;
 }
 .btn-secondary {
-  background-color: white;
+  background-color: #f2f8ef;
   color: #6c8d4f;
   border: 2px solid;
 }
 .btn {
   /* width: 149px; */
-  padding: 14px 40px;
+  padding: 12px 28px;
   /* height: 56px; */
-  font-weight: 100;
+  font-weight: 700;
   font-size: smaller;
   border-radius: 10px;
   display: flex;
@@ -82,42 +86,54 @@ header a:hover {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  margin: 27px 0;
-  /* padding: 23px 0; */
+  margin: 20px 0;
+  /* padding: 0px 0; */
   /* background-color: #52901a; */
 }
 .hero {
   background-color: #f2f8ef;
   display: flex;
   justify-content: center;
+  height: 500px;
 }
 .hero-content {
-  align-items: center;
-  font-size: x-large;
+  /* align-items: center; */
+  /* font-size: x-large; */
 }
 .hero-buttons {
-  padding-right: 191px; /* width: 60%; */
+  padding-right: 191px;
+  width: 94%;
   display: flex;
   justify-content: space-between;
 }
 .hero-text {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-evenly;
+}
+.description {
+  /* margin: 26px 0; */
+  line-break: loose;
 }
 .subtitle {
   color: #52901a;
-  margin-bottom: 6px;
-  font-size: medium;
+  /* margin-bottom: 6px; */
+  font-size: 19px;
   font-weight: bold;
 }
 h1 {
-  font-size: xxx-large;
+  font-weight: 900;
+  font-size: 64px;
 }
 .hero-image {
-  width: 41%;
+  height: 90%;
+  width: 50%;
 }
 .hero-image img {
   width: 100%;
-  height: 336px;
+  height: 100%;
   border-radius: 28px;
 }
 .feature-card {
@@ -187,5 +203,5 @@ h3 + p {
     contrast(119%);
 }
 .icon {
-  width: 50px;
+  width: 38px;
 }
