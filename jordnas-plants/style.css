@@ -1,0 +1,33 @@
+body {
+  margin: 10px 120px;
+  background-color: #e6f0e6;
+  color: #1b5e20;
+}
+h1,
+h2 {
+  color: #2e7d32;
+}
+a {
+  color: #388e3c;
+}
+a:hover {
+  color: #a4f2a8;
+}
+img {
+  width: 300px;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.article div {
+  display: flex;
+  justify-content: flex-start;
+  width: 78%;
+}
+.article p {
+  width: 60%;
+  margin-right: 30px;
+  text-align: justify;
+}
