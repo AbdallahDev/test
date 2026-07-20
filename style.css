@@ -1,0 +1,46 @@
+body {
+  background-color: #fdf0d5;
+  font-weight: 600;
+  width: 63%;
+  margin: 0 auto;
+  text-align: justify;
+}
+h1 {
+  text-align: center;
+  color: #ffba08;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+#classic h1,
+#classic h2,
+#classic h3 {
+  color: #780000;
+}
+#classic p {
+  color: #2e3583;
+}
+#modern h1,
+#modern h2,
+#modern h3 {
+  color: #e71e2b;
+}
+#modern p {
+  color: #6e77d6;
+}
+img {
+  width: 150px;
+}
+.article-with-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-with-image img {
+  flex: 1;
+}
+.article-with-image p {
+  margin: 0 22px 0 0;
+}
