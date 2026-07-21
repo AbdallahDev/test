@@ -4,31 +4,17 @@ body {
   width: 63%;
   margin: 0 auto;
   text-align: justify;
+  color: #2e3583;
 }
 h1 {
   text-align: center;
-  color: #ffba08;
+  color: #e85d04;
+  font-size: 27px;
 }
-h1,
 h2,
 h3 {
-  font-weight: 700;
-}
-#classic h1,
-#classic h2,
-#classic h3 {
   color: #780000;
-}
-#classic p {
-  color: #2e3583;
-}
-#modern h1,
-#modern h2,
-#modern h3 {
-  color: #e71e2b;
-}
-#modern p {
-  color: #6e77d6;
+  font-weight: 700;
 }
 img {
   width: 150px;
@@ -36,11 +22,21 @@ img {
 .article-with-image {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: normal;
 }
 .article-with-image img {
   flex: 1;
 }
 .article-with-image p {
   margin: 0 22px 0 0;
+}
+.cars {
+  line-height: 1.7;
+}
+article ul {
+  margin: 0;
+}
+
+article > section {
+  margin: 60px 0;
 }
