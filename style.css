@@ -18,6 +18,10 @@ article a {
   color: inherit;
   cursor: pointer;
 }
+article a:hover,
+article a:focus {
+  color: #70ccde;
+}
 h1 {
   text-align: center;
   color: #e85d04;
