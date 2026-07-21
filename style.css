@@ -6,6 +6,18 @@ body {
   text-align: justify;
   color: #2e3583;
 }
+article ul {
+  margin: 0;
+}
+
+article > section {
+  margin: 60px 0;
+}
+article a {
+  text-decoration: underline;
+  color: inherit;
+  cursor: pointer;
+}
 h1 {
   text-align: center;
   color: #e85d04;
@@ -32,11 +44,4 @@ img {
 }
 .cars {
   line-height: 1.7;
-}
-article ul {
-  margin: 0;
-}
-
-article > section {
-  margin: 60px 0;
 }
