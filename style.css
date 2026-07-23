@@ -1,0 +1,17 @@
+h1,
+h2 {
+  color: #9667e0;
+}
+p {
+  color: rgb(188, 188, 188);
+}
+dt {
+  font-weight: bold;
+}
+dd{
+    font-style: italic;
+}
+strong[class~="3"]{
+    text-decoration: underline;
+    color: black;
+}
