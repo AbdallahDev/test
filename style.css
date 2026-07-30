@@ -1,79 +1,136 @@
-/* Basic type and text */
+/* || General setup */
+
+body {
+  margin: 0;
+}
+
 html {
-  box-sizing: border-box;
+  font-size: 10px;
+  background-color: darkgrey;
 }
 
 body {
-  font: 1.2em / 1.5 system-ui;
-  width: clamp(480px, 70%, 1000px);
+  width: 70%;
+  min-width: 800px;
   margin: 0 auto;
 }
 
+/* || typography */
+
+h1,
+h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #2a2a2a;
+}
+
+p,
+li {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #2a2a2a;
+}
+
 h1 {
-  font-size: 2em;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
 }
 
 h2 {
-  font-size: 1.5em;
-}
-h2 + p::first-line {
-  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
 }
 
-a {
-  color: red;
+p,
+li {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
+/* || header layout */
+
+header {
+  margin-bottom: 10px;
 }
 
-/* Nav menu */
+main,
+header,
+nav,
+article,
+aside,
+footer,
+section {
+  background-color: #00ff0080;
+  padding: 1%;
+}
+
+.header {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+header img {
+  height: 60px;
+  margin-right: 10px;
+}
 
 nav ul {
-  display: flex;
   padding: 0;
   list-style-type: none;
-  justify-content: space-between;
-  gap: 10px;
+  display: flex;
 }
 
 nav li {
+  text-align: center;
   flex: 1;
 }
 
 nav a {
+  font-size: 2rem;
+  text-transform: uppercase;
   text-decoration: none;
   color: black;
-  background-color: yellowgreen;
-  text-align: center;
-  padding: 10px;
-  display: block;
 }
 
 nav a:hover,
 nav a:focus {
-  background-color: goldenrod;
+  color: red;
 }
 
-/* Intro and summary */
+/* || main layout */
 
-.highlight {
-  margin-top: 0;
-  background-color: darkslategray;
-  color: cornsilk;
-  padding: 20px;
+main {
+  display: flex;
+  gap: 10px;
 }
 
-.highlight a {
-  color: purple;
+article {
+  flex: 4;
 }
 
-/* Footer */
+aside {
+  flex: 1;
+}
+
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  max-width: 100%;
+}
 
 footer {
-  margin-top: 20px;
-  background-color: goldenrod;
-  text-shadow: 1px 1px 1px black;
+  margin-top: 10px;
 }
