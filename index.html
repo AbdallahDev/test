@@ -3,72 +3,152 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Dogs table</title>
+    <title>Planet data table</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Dogs Table</h1>
-    <h1>School language timetable</h1>
-
+    <h1>Planet data table</h1>
     <table>
+      <caption>
+        ata about the planets of our solar system (Planetary facts taken from
+        <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+          >Nasa's Planetary Fact Sheet - Metric</a
+        >)
+      </caption>
       <colgroup>
-        <col span="2" />
-        <col class="column-background" />
-        <col class="column-fixed-width" />
-        <col class="column-background" />
-        <col class="column-background-border" />
-        <col span="2" class="column-fixed-width" />
+        <col span="3">
+        <col class="column-border">
       </colgroup>
-      <tr>
-        <td>&nbsp;</td>
-        <th>Mon</th>
-        <th>Tues</th>
-        <th>Wed</th>
-        <th>Thurs</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-      </tr>
-      <tr>
-        <th>1st period</th>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th>2nd period</th>
-        <td>English</td>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th>3rd period</th>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>&nbsp;</td>
-        <td>German</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <th>4th period</th>
-        <td>&nbsp;</td>
-        <td>English</td>
-        <td>&nbsp;</td>
-        <td>English</td>
-        <td>Dutch</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
+      <thead>
+        <tr>
+          <td colspan="3"></td>
+          <th scope="col">Name</th>
+          <th scope="col">Mass (10<sup>24</sup>kg)</th>
+          <th scope="col">Diameter (km)</th>
+          <th scope="col">Density (kg/m<sup>3</sup>)</th>
+          <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+          <th scope="col">Length of day (hours)</th>
+          <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+          <th scope="col">Mean temperature (°C)</th>
+          <th scope="col">Number of moons</th>
+          <th scope="col">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="4" colspan="3" scope="rowgroup">Terrestrial planets</th>
+          <th scope="row">Mercury</th>
+          <td>0.330</td>
+          <td>4,879</td>
+          <td>5427</td>
+          <td>3.7</td>
+          <td>4222.6</td>
+          <td>57.9</td>
+          <td>167</td>
+          <td>0</td>
+          <td>Closest to the Sun</td>
+        </tr>
+        <tr>
+          <th scope="row">Venus</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>2802.0</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Earth</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>2802.0</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td>Our world</td>
+        </tr>
+        <tr>
+          <th scope="row">Mars</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>2802.0</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td>Our world</td>
+        </tr>
+        <tr>
+          <th scope="rowgroup" rowspan="4" colspan="2">Jovian planets</th>
+          <th scope="rowgroup" rowspan="2">Gas giants</th>
+          <th scope="row" scope="row">Jupiter</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>464</td>
+          <td>0</td>
+          <td>The largest planet</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturn</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>8.9</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td>The largest planet</td>
+        </tr>
+        <tr>
+          <th scope="rowgroup" rowspan="2">Ice giants</th>
+          <th scope="row">Uranus</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>8.9</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td>The largest planet</td>
+        </tr>
+        <tr>
+          <th scope="row">Neptune</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>8.9</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td>The largest planet</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="3">Dwarf planets*</th>
+          <th scope="row">Neptune</th>
+          <td>4.87</td>
+          <td>12,104</td>
+          <td>5243</td>
+          <td>8.9</td>
+          <td>8.9</td>
+          <td>108.2</td>
+          <td>464</td>
+          <td>0</td>
+          <td>Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
