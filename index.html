@@ -1,154 +1,110 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Planet data table</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Forms challenge</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
   </head>
   <body>
-    <h1>Planet data table</h1>
-    <table>
-      <caption>
-        ata about the planets of our solar system (Planetary facts taken from
-        <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/"
-          >Nasa's Planetary Fact Sheet - Metric</a
-        >)
-      </caption>
-      <colgroup>
-        <col span="3">
-        <col class="column-border">
-      </colgroup>
-      <thead>
-        <tr>
-          <td colspan="3"></td>
-          <th scope="col">Name</th>
-          <th scope="col">Mass (10<sup>24</sup>kg)</th>
-          <th scope="col">Diameter (km)</th>
-          <th scope="col">Density (kg/m<sup>3</sup>)</th>
-          <th scope="col">Gravity (m/s<sup>2</sup>)</th>
-          <th scope="col">Length of day (hours)</th>
-          <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
-          <th scope="col">Mean temperature (°C)</th>
-          <th scope="col">Number of moons</th>
-          <th scope="col">Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th rowspan="4" colspan="3" scope="rowgroup">Terrestrial planets</th>
-          <th scope="row">Mercury</th>
-          <td>0.330</td>
-          <td>4,879</td>
-          <td>5427</td>
-          <td>3.7</td>
-          <td>4222.6</td>
-          <td>57.9</td>
-          <td>167</td>
-          <td>0</td>
-          <td>Closest to the Sun</td>
-        </tr>
-        <tr>
-          <th scope="row">Venus</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>2802.0</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>0</td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row">Earth</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>2802.0</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>0</td>
-          <td>Our world</td>
-        </tr>
-        <tr>
-          <th scope="row">Mars</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>2802.0</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>0</td>
-          <td>Our world</td>
-        </tr>
-        <tr>
-          <th scope="rowgroup" rowspan="4" colspan="2">Jovian planets</th>
-          <th scope="rowgroup" rowspan="2">Gas giants</th>
-          <th scope="row" scope="row">Jupiter</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>464</td>
-          <td>0</td>
-          <td>The largest planet</td>
-        </tr>
-        <tr>
-          <th scope="row">Saturn</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>8.9</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>0</td>
-          <td>The largest planet</td>
-        </tr>
-        <tr>
-          <th scope="rowgroup" rowspan="2">Ice giants</th>
-          <th scope="row">Uranus</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>8.9</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>0</td>
-          <td>The largest planet</td>
-        </tr>
-        <tr>
-          <th scope="row">Neptune</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>8.9</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>0</td>
-          <td>The largest planet</td>
-        </tr>
-        <tr>
-          <th scope="row" colspan="3">Dwarf planets*</th>
-          <th scope="row">Neptune</th>
-          <td>4.87</td>
-          <td>12,104</td>
-          <td>5243</td>
-          <td>8.9</td>
-          <td>8.9</td>
-          <td>108.2</td>
-          <td>464</td>
-          <td>0</td>
-          <td>Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
-        </tr>
-      </tbody>
-    </table>
+    <form action="">
+      <h1>We want your feedback!</h1>
+
+      <p>
+        We're very excited that you visited the little house in the woods, and
+        we want to hear what you thought of it! Please fill in the below
+        sections. You don't need to provide your name or contact details, but if
+        you do, we'll enter you into a prize draw where you'll have a chance to
+        win prizes.
+      </p>
+
+      <h2>Facilites</h2>
+      <fieldset class="form-section">
+        <legend>Was the porridge</legend>
+        <input type="radio" name="porridge" id="hot" value="hot" /><label
+          for="hot"
+          >Too hot?</label
+        >
+        <input type="radio" name="porridge" id="cold" value="cold" /><label
+          for="cold"
+          >Too cold?</label
+        >
+        <input
+          type="radio"
+          name="porridge"
+          id="right"
+          value="right"
+          checked
+        /><label for="right">Right?</label>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Were the beds</legend>
+        <input type="radio" name="bed" id="hard" value="hard" /><label
+          for="hard"
+          >Too hard?</label
+        >
+        <input type="radio" name="bed" id="soft" value="soft" /><label
+          for="soft"
+          >Too soft?</label
+        >
+        <input type="radio" name="bed" id="right" value="right" checked /><label
+          for="right"
+          >Just right?</label
+        >
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Describe the chairs (select all you agree with)</legend>
+        <input type="checkbox" id="comfy" /><label for="comfy">Comfy</label>
+        <input type="checkbox" id="luxurious" /><label for="luxurious"
+          >Luxurious</label
+        >
+        <input type="checkbox" id="hi-tech" /><label for="hi-tech"
+          >Hi-tech</label
+        >
+        <input type="checkbox" id="pretty" /><label for="pretty">Pretty</label>
+        <input type="checkbox" id="majestic" /><label for="majestic"
+          >Majestic</label
+        >
+      </fieldset>
+
+      <h2>About your hosts</h2>
+      <fieldset class="form-section">
+        <legend>Choose your favorite food:</legend>
+        <select name="favorite-food" id="favorite-food" required>
+          <option value="">Choose a food</option>
+          <option value="mansaf">Mansaf</option>
+          <option value="maqlobah">Maqlobah</option>
+          <option value="pizza">Pizza</option>
+          <option value="shawarmah">Shawarmah</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Which greeting did you prefer?</legend>
+        <select name="greeting" id="greeting" required>
+          <option value="">Choose a greeting</option>
+          <option value="wave">Wave</option>
+          <option value="friendly-greeting">Friendly greeting</option>
+          <option value="growl">Growl</option>
+          <option value="claw-marks">Claw marks in the door</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Any other feedback?</legend>
+        <label for="comment">Give us your comments</label>
+        <textarea name="commet" id="comment"></textarea>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Your details</legend>
+        <div class="separator"><lable for="name">Name:</label><input  type="text" id="name" required/></div>
+        <div class="separator"><lable for="email">Email:</label> <input type="email" id="email" required/></div>
+        <div class="separator"><lable class="separator" for="phone">Phone:</label><input class="separator" type="tel" id="phone" required/></div>
+      </fieldset>
+      <button>Sumbit</button>
+    </form>
   </body>
 </html>
