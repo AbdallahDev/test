@@ -1,110 +1,21 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Forms challenge</title>
-    <link href="style.css" rel="stylesheet" />
-    <script defer src="index.js"></script>
-  </head>
-  <body>
-    <form action="">
-      <h1>We want your feedback!</h1>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-      <p>
-        We're very excited that you visited the little house in the woods, and
-        we want to hear what you thought of it! Please fill in the below
-        sections. You don't need to provide your name or contact details, but if
-        you do, we'll enter you into a prize draw where you'll have a chance to
-        win prizes.
-      </p>
+<head>
+  <title>بوابة البعثة العلمية لاستكشاف أعماق المحيطات</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="author" content="Abdullah Ahmad">
+  <meta name="description" content="بوابة البعثة العلمية لاستكشاف أعماق المحيطات (The Deep Sea Expedition Portal)">
+</head>
 
-      <h2>Facilites</h2>
-      <fieldset class="form-section">
-        <legend>Was the porridge</legend>
-        <input type="radio" name="porridge" id="hot" value="hot" /><label
-          for="hot"
-          >Too hot?</label
-        >
-        <input type="radio" name="porridge" id="cold" value="cold" /><label
-          for="cold"
-          >Too cold?</label
-        >
-        <input
-          type="radio"
-          name="porridge"
-          id="right"
-          value="right"
-          checked
-        /><label for="right">Right?</label>
-      </fieldset>
+<body>
+  <div class="wrapper">
+    <div class="box one">rgb(2 121 139 / .3)</div>
+    <div class="box two">rgb(197 93 161 / .7)</div>
+    <div class="box three">rgb(18 138 125 / .9)</div>
+  </div>
+</body>
 
-      <fieldset class="form-section">
-        <legend>Were the beds</legend>
-        <input type="radio" name="bed" id="hard" value="hard" /><label
-          for="hard"
-          >Too hard?</label
-        >
-        <input type="radio" name="bed" id="soft" value="soft" /><label
-          for="soft"
-          >Too soft?</label
-        >
-        <input type="radio" name="bed" id="right" value="right" checked /><label
-          for="right"
-          >Just right?</label
-        >
-      </fieldset>
-
-      <fieldset class="form-section">
-        <legend>Describe the chairs (select all you agree with)</legend>
-        <input type="checkbox" id="comfy" /><label for="comfy">Comfy</label>
-        <input type="checkbox" id="luxurious" /><label for="luxurious"
-          >Luxurious</label
-        >
-        <input type="checkbox" id="hi-tech" /><label for="hi-tech"
-          >Hi-tech</label
-        >
-        <input type="checkbox" id="pretty" /><label for="pretty">Pretty</label>
-        <input type="checkbox" id="majestic" /><label for="majestic"
-          >Majestic</label
-        >
-      </fieldset>
-
-      <h2>About your hosts</h2>
-      <fieldset class="form-section">
-        <legend>Choose your favorite food:</legend>
-        <select name="favorite-food" id="favorite-food" required>
-          <option value="">Choose a food</option>
-          <option value="mansaf">Mansaf</option>
-          <option value="maqlobah">Maqlobah</option>
-          <option value="pizza">Pizza</option>
-          <option value="shawarmah">Shawarmah</option>
-        </select>
-      </fieldset>
-
-      <fieldset class="form-section">
-        <legend>Which greeting did you prefer?</legend>
-        <select name="greeting" id="greeting" required>
-          <option value="">Choose a greeting</option>
-          <option value="wave">Wave</option>
-          <option value="friendly-greeting">Friendly greeting</option>
-          <option value="growl">Growl</option>
-          <option value="claw-marks">Claw marks in the door</option>
-        </select>
-      </fieldset>
-
-      <fieldset class="form-section">
-        <legend>Any other feedback?</legend>
-        <label for="comment">Give us your comments</label>
-        <textarea name="commet" id="comment"></textarea>
-      </fieldset>
-
-      <fieldset class="form-section">
-        <legend>Your details</legend>
-        <div class="separator"><lable for="name">Name:</label><input  type="text" id="name" required/></div>
-        <div class="separator"><lable for="email">Email:</label> <input type="email" id="email" required/></div>
-        <div class="separator"><lable class="separator" for="phone">Phone:</label><input class="separator" type="tel" id="phone" required/></div>
-      </fieldset>
-      <button>Sumbit</button>
-    </form>
-  </body>
 </html>
