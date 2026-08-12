@@ -1,12 +1,65 @@
-.box {
-  width: 200px;
-  height: 80px;
-  padding: 0.5em;
-  border: 1px solid #cccccc;
-  margin: 20px;
+/* Type and text */
+
+* {
+  box-sizing: border-box;
 }
-.box {
-  background-image: url("https://mdn.github.io/shared-assets/images/examples/star.png");
-  background-size: 18%;
-  background-repeat: space;
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  font: 1.2em / 1.5 system-ui;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3vw;
+}
+h1::before {
+  content: "📖";
+  margin-right: 20px;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+a {
+  color: red;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* Styling the pane */
+
+.pane {
+  height: 100%;
+  width: 60%;
+  max-width: 1000px;
+  min-width: 480px;
+}
+
+h1,
+.controls {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+}
+
+.controls {
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+button {
+  flex: 1;
 }
