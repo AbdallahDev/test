@@ -1,95 +1,68 @@
-/* Type and text */
-
 * {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  height: inherit;
-  font: 1.2em / 1.5 system-ui;
-  margin: 0 auto;
-}
-
-h1 {
-  /* font-size: 2em; */
-  font-size: calc(1em + 1.1vw);
-}
-
-h2 {
-  /* font-size: 1.5em; */
-  font-size: calc(0.69em + 0.9vw);
-}
-
-a {
-  color: red;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-/* Styling the pane */
-
-.pane {
-  height: 100%;
-  width: clamp(480px, 60%, 1000px);
-  margin: 0 auto;
-  background: linear-gradient(#9fb4c7, #7f7caf);
-}
-
-h1,
-.controls {
+  background-color: white;
+  color: #333333;
+  font:
+    1em / 1.4 "Helvetica Neue",
+    "Helvetica",
+    "Arial",
+    sans-serif;
+  padding: 1em;
   margin: 0;
+  width: 500px;
+}
+
+/* Don't edit the code above here! */
+
+/* Add your code here */
+form {
+  margin: 0 27px;
+}
+h2 {
+  text-align: center;
+  color: cornflowerblue;
+}
+ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100px;
+  justify-content: center;
+  padding: 0;
+  max-height: 100%;
+  margin: 0;
 }
-h1::before {
-  content: "📖";
-  margin-right: 20px;
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 16px;
 }
-.content {
-  height: calc(100% - 200px);
-  border: 2px solid #28587b;
-  border-radius: 10px;
-  background-color: #eeeeff;
-  background-image: url("https://mdn.github.io/shared-assets/images/examples/big-star.png");
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  background-position: right 15px top 5px;
-  overflow: scroll;
-}
-section,
-.content {
-  padding: 0 20px;
-}
-.controls {
-  justify-content: space-around;
-  gap: 20px;
-  padding: 20px;
-}
-
-button {
+label {
+  display: inline-block;
   flex: 1;
-  height: 100%;
-  font-size: 1.2em;
-  color: white;
-  background-color: rgb(40 88 123 / 0.8);
+  font-weight: 600;
+  color: cornflowerblue;
 }
-button:hover,
-button:focus {
-  background-color: rgb(40 88 123 / 1);
+input,
+select,
+button {
+  box-sizing: border-box;
+  flex: 2;
+  margin: 0;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 100%;
+  color: cornflowerblue;
+  background-color: aliceblue;
+  border: 2px solid cornflowerblue;
+  border-radius: 5px;
 }
-
-img {
-  max-width: 90%;
-  margin: 0 auto;
-  display: block;
-  border: 1px solid #28587b;
+button {
+  font-weight: bold;
+  border: none;
 }
